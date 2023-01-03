@@ -5,100 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitTest - The Basic of Web development</title>
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
-    <style>
-        :root {
-            --black-color: #000;
-        }
-
-        @media (max-width: 600px) {
-            :root {
-      /* Media query */
-                --black-color: #0f0;
-            }
-        }
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background-color: rgb(35, 35, 35);
-            color: #fff;
-            
-            
-        }
-
-        .lorem-ipsum {
-            text-align: justify;
-            line-height: 25px;
-        }
-
-        
-        #orange-text {
-            color: orange;
-            text-align: center;
-            background-color: rgba(14, 14, 14, 0.475);
-            font-size: 20px;
-            border-radius: 10px;
-            padding: 5px;
-            text-transform: uppercase;
-            font-weight: 500;
-            box-shadow: 0 10px 20px rgba(160, 160, 160, 0.19), 0 6px 6px rgba(160, 160, 160, 0.23);
-        }
-
-        .pink-text {
-            color: pink !important;
-        }
-
-        .blue-text {
-            color: blue;
-        }
-        .logo-image {
-            width: 100px;
-            height: auto;
-            padding: 10px;
-        }
-
-        .thin-black-border {
-            border-color: black; /* fallback */
-            border-color: var(--black-color, black); 
-            
-            border-width: 5px;
-            border-style: solid;
-            border-radius: 10px;
-        }
-
-        .silver-bg {
-            background-color: darkgrey;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        .form-box {
-            padding: 20px;
-            margin: 20px;
-        }
-
-        #dev-form {
-            background-color: darkmagenta;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        .submit-button {
-            margin: 20px 0 0 0;
-        }
-
-        .margin-bottom {
-            margin: 0 0 20px 0;
-        }
-
-        [type='radio'], [type='checkbox']{
-            margin: 20px 0px 20px 0px;
-        }
-
-        #footer {
-            opacity: 0.7;
-        }
-
-       
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 
 <body>
@@ -108,6 +16,7 @@
             <h2>Hello World!</h2>
             <p id="orange-text" class="blue-text pink-text" style="color: green;">Click <a href="https://www.google.com" target="_blank">here</a> to access Google</p>
             <!--Inheritance-->
+            <p>Click <a href="#become-a-web-dev">here</a> to become a web developer</p>
             <p>Click <a href="#footer">here</a> to go to footer</p>
             <img width="500px" src="https://4.bp.blogspot.com/-dPBsZCgc9-o/XVS3Swg2E6I/AAAAAAAABD0/auWvVjsu-ks1FXLrIohWEGnKswQGnIjeQCLcBGAs/s1600/developer-on-computer.jpg" alt="A man sitting in front of the monitor and developing web application.">
         </section>
@@ -118,7 +27,7 @@
                 Consequat interdum varius sit amet mattis. Risus viverra adipiscing at in tellus integer feugiat scelerisque.</p>
         </section>
         <hr>
-        <section>
+        <section id="become-a-web-dev">
             <h2>How To Become a Web developer?</h2>
             <div class="silver-bg">
                 <h3>Useful Sites</h3>
@@ -160,14 +69,12 @@
                     <label for="c++"><input type="checkbox" id="c++" value="c++" name="languages"> C++</label> 
                 </fieldset>
                 <button type="submit" class="submit-button">Submit</button>
-
             </form>
         </section>
     </main>
     <hr>
     <footer id="footer">
         <p>No Copyright - <a href="https://reikavik.github.io">Reikavik</a></p>
-
     </footer>
 </body>
 </html>

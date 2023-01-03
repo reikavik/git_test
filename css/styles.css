@@ -1,0 +1,95 @@
+:root {
+    --black-color: #000;
+}
+
+@media (max-width: 600px) {
+    :root {
+/* Media query */
+        --black-color: #0f0;
+    }
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgb(35, 35, 35);
+    color: #fff;
+    
+    
+}
+
+.lorem-ipsum {
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+#orange-text {
+    color: orange;
+    text-align: center;
+    background-color: rgba(14, 14, 14, 0.475);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 10px 20px rgba(160, 160, 160, 0.19), 0 6px 6px rgba(160, 160, 160, 0.23);
+}
+
+
+.pink-text {
+    color: pink !important;
+}
+
+.blue-text {
+    color: blue;
+}
+.logo-image {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+.thin-black-border {
+    border-color: black; /* fallback */
+    border-color: var(--black-color, black); 
+    
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.silver-bg {
+    background-color: darkslategray;
+    padding: 20px;
+    margin: 20px;
+}
+
+.form-box {
+    padding: 20px;
+    margin: 20px;
+}
+
+#dev-form {
+    background-color: darkmagenta;
+    padding: 20px;
+    margin: 20px;
+}
+
+.submit-button {
+    margin: 20px 0 0 0;
+}
+
+.margin-bottom {
+    margin: 0 0 20px 0;
+}
+
+[type='radio'], [type='checkbox']{
+    margin: 20px 0px 20px 0px;
+}
+
+#footer {
+    opacity: 0.7;
+}
+
+a {
+    color: orange;
+}
