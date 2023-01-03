@@ -17,14 +17,29 @@
             }
         }
         body {
-            font-family: Inter, Helvetica, Arial, sans-serif;
-            background-color: rgb(245, 245, 245);
-            color: black;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: rgb(35, 35, 35);
+            color: #fff;
+            
             
         }
+
+        .lorem-ipsum {
+            text-align: justify;
+            line-height: 25px;
+        }
+
+        
         #orange-text {
             color: orange;
-            
+            text-align: center;
+            background-color: rgba(14, 14, 14, 0.475);
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 5px;
+            text-transform: uppercase;
+            font-weight: 500;
+            box-shadow: 0 10px 20px rgba(160, 160, 160, 0.19), 0 6px 6px rgba(160, 160, 160, 0.23);
         }
 
         .pink-text {
@@ -50,7 +65,7 @@
         }
 
         .silver-bg {
-            background-color: silver;
+            background-color: darkgrey;
             padding: 20px;
             margin: 20px;
         }
@@ -61,7 +76,7 @@
         }
 
         #dev-form {
-            background-color: cornsilk;
+            background-color: darkmagenta;
             padding: 20px;
             margin: 20px;
         }
@@ -78,6 +93,10 @@
             margin: 20px 0px 20px 0px;
         }
 
+        #footer {
+            opacity: 0.7;
+        }
+
        
     </style>
 </head>
@@ -92,6 +111,13 @@
             <p>Click <a href="#footer">here</a> to go to footer</p>
             <img width="500px" src="https://4.bp.blogspot.com/-dPBsZCgc9-o/XVS3Swg2E6I/AAAAAAAABD0/auWvVjsu-ks1FXLrIohWEGnKswQGnIjeQCLcBGAs/s1600/developer-on-computer.jpg" alt="A man sitting in front of the monitor and developing web application.">
         </section>
+        <section>
+            <p class="lorem-ipsum">Lorem ipsum <strong>sit amet</strong> , consectetur <s>adi piscing elit</s>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Nulla posuere <em>sollicitudin aliquam</em> ultrices <u>sagittis</u>. 
+                Pretium viverra suspendisse potenti nullam ac tortor vitae purus. 
+                Consequat interdum varius sit amet mattis. Risus viverra adipiscing at in tellus integer feugiat scelerisque.</p>
+        </section>
+        <hr>
         <section>
             <h2>How To Become a Web developer?</h2>
             <div class="silver-bg">
@@ -116,6 +142,7 @@
             </div>
             
         </section>
+        <hr>
         <section>
             <h2>Wanna be a dev?</h2>
             <form action="http://example.com/submit" id="dev-form">
@@ -137,6 +164,7 @@
             </form>
         </section>
     </main>
+    <hr>
     <footer id="footer">
         <p>No Copyright - <a href="https://reikavik.github.io">Reikavik</a></p>
 
