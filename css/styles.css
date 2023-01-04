@@ -4,24 +4,45 @@
     --black-color: #000;
 }
 
-@media (max-width: 600px) {
-    :root {
-/* Media query */
-        --black-color: #0f0;
-    }
+
+
+.head-image {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+
 }
+
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Inter, Helvetica, Arial, sans-serif;
     background-color: rgb(35, 35, 35);
     color: #fff;
-    padding: 25px;
+    padding: 15px;
+    line-height: 25px;
     
+    
+}
+
+.navigation {
+    background-color: gray;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(160, 160, 160, 0.19), 0 6px 6px rgba(160, 160, 160, 0.23);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-weight: 700;
+
+}
+
+.hidden-url {
+    color: white;
     
 }
 
 .lorem-ipsum {
     text-align: justify;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 
@@ -32,7 +53,7 @@ body {
     text-align: center;
     background-color: rgba(14, 14, 14, 0.475);
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px;
     text-transform: uppercase;
     font-weight: 500;
@@ -65,18 +86,20 @@ body {
 .silver-bg {
     background-color: darkslategray;
     padding: 20px;
+    border-radius: 15px;
     
 }
 
 .form-box {
     padding: 20px;
     margin: 20px;
+    
 }
 
 #dev-form {
     background-color: darkmagenta;
     padding: 20px;
-    
+    border-radius: 15px;
 }
 
 .submit-button {
@@ -97,4 +120,35 @@ body {
 
 a {
     color: orange;
+    text-decoration: none;
+}
+
+a.block-button {
+    color: pink;
+    text-decoration: none;
+}
+
+a.block-button:hover {
+    
+    color: pink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+@media (max-width: 600px) {
+    :root {
+/* Media query */
+        --black-color: #0f0;
+    }
+
+    .head-image {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+
 }

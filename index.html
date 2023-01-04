@@ -8,19 +8,27 @@
     <title>GitTest - The Basic of Web development</title>
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     
 </head>
 
-<body>
+<body id="top-header">
     <main>
-        <h1>GitTest</h1>
+        <h1 >GitTest</h1>
         <section>
             <h2>Hello World!</h2>
-            <p id="orange-text" class="blue-text pink-text" style="color: green;">Click <a href="https://www.google.com" target="_blank">here</a> to access Google</p>
+            
+            <div class="navigation">
+                <p><a href="#top-header" class="hidden-url">TOP</a></p>
+            </div>
+            <div>
+                <p>Click <a href="#become-a-web-dev">here</a> to become a web developer</p>
+                <p>Click <a href="#footer">here</a> to go to footer</p>
+            </div>
             <!--Inheritance-->
-            <p>Click <a href="#become-a-web-dev">here</a> to become a web developer</p>
-            <p>Click <a href="#footer">here</a> to go to footer</p>
-            <img width="500px" src="./img/coding.jpg">
+            <a href="https://www.google.com" target="_blank" class="block-button"><p id="orange-text" class="blue-text pink-text" style="color: green;">Click here to access Google</p></a>
+            <img class="head-image" src="./img/coding.jpg">
         </section>
         <section>
             <p class="lorem-ipsum">Lorem ipsum <strong>sit amet</strong> , consectetur <s>adi piscing elit</s>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -76,7 +84,7 @@
     </main>
     <hr>
     <footer id="footer">
-        <p>No Copyright - <a href="https://reikavik.github.io">Reikavik</a></p>
+        <p>No Copyright - <a href="https://reikavik.github.io" target="_blank">Reikavik</a></p>
     </footer>
 </body>
 </html>
